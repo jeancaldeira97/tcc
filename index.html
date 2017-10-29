@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Menu lateral em CSS </title>
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+	
+		<nav id="menu">
+	
+		  <ul>
+			<li><a href="link1.htm">Home<a/></li>
+			<li><a href="link2.htm">Agendamento</a></li>
+			<li><a href="link3.htm">Financeiro</a></li>
+			<li><a href="google.com" id="search-click">Cadastro</a></li>
+			<li><a href="link5.htm">Saiba mais</a></li>
+		  </ul>
+		</nav>
+
+		<div id="conteudo">		
+			<table id="agenda">
+					<tr>
+						<th>Horários</th>
+						<th>Domingo</th>
+						<th>Segunda</th>
+						<th>Terça</th>
+						<th>Quarta</th>
+						<th>Quinta</th>
+						<th>Sexta</th>
+						<th>Sábado</th>
+					</tr>
+
+					<tr>
+						<th class="atendimento">10:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+					
+					<tr>
+						<th class="atendimento">11:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+
+					<tr>
+						<th class="atendimento">12:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+					
+					<tr>
+						<th class="atendimento">13:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+
+					<tr>
+						<th class="atendimento">14:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+
+					<tr>
+						<th class="atendimento">15:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+
+					<tr>
+						<th class="atendimento">16:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+
+					<tr>
+						<th class="atendimento">17:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+					
+					<tr>
+						<th class="atendimento">18:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+					
+					<tr>
+						<th class="atendimento">19:00</th>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+						<td class="horario" title=""></td>
+					</tr>
+			</table>
+			<div id="cadastrar-horario">
+				<p class="titles">Nome do cliente: 
+					<input class="client" type="text" placeholder="Nome do cliente"></br>
+				</p>
+
+				<p class="titles">Horário inicial:
+					<input class="time-start" type="time" disabled></br>
+				</p>
+				<p class="titles">Horário final:
+					<select id="select_end">
+						<option value="" disabled selected>Selecione</option>
+						<option class="end">10:00</option>
+						<option class="end">11:00</option>
+						<option class="end">12:00</option>
+						<option class="end">13:00</option>
+						<option class="end">14:00</option>
+						<option class="end">15:00</option>
+						<option class="end">16:00</option>
+						<option class="end">17:00</option>
+						<option class="end">18:00</option>
+						<option class="end">19:00</option>
+						<option class="end">20:00</option>
+					</select></br>
+				</p>	
+				<button class="button btn-agendar">Agendar</button>
+				<button class="button btn-excluir">Excluir</button>
+			</div>
+		</div>
+	<script src="js/index.js"></script>
+	</body>
+</html>
