@@ -33,24 +33,29 @@ function divClick(){
 	    	
 	    	var content = this.textContent;
 	    	var divTime = this.parentNode.querySelector(".atendimento");
-	    	manipulateSelectEnd(divTime);
 	    	clientInput.value=content;
 	    	if(content===""){
+	    		manipulateSelectEnd(divTime,this);
 	    		this.classList.add("select");
 		    	startInput.value=divTime.textContent;
 		    }else{
 		    	var tdColumns = this.parentNode.querySelectorAll("td");
 		    	btnExcluir.classList.add("show");
-
+		    	btnAgendar.textContent="Editar";
 		    	for(var i = 0; i<tdColumns.length;i++){
 					if(tdColumns[i]===this){
 						var idColumn = i;
 					}
 				}
-
+				var teste = 0;
 				for(var i=0; i<atendimentoTime.length; i++){
 			    	var all = atendimentoTime[i].parentNode.querySelectorAll("td");
 			    	if(all[idColumn].textContent===content){
+			    		if(teste==0){
+			    			manipulateSelectEnd(all[idColumn].parentNode.querySelector(".atendimento"),all[idColumn]);
+			    			console.log(all[idColumn]);
+			    			teste=1;
+			    		}
 			    		all[idColumn].classList.add("select");
 			    	}
 				}
@@ -67,7 +72,7 @@ function clearAll(){
 	startInput.value="";
 	selectedTime.selectedIndex = 0;
 	btnExcluir.classList.remove("show");
-
+	btnAgendar.textContent="Agendar";
 	endTime.forEach(function(element){
 		element.classList.remove("show");
 	});
@@ -147,10 +152,23 @@ function deleteHigh(){
 
 
 /*Manipula o Horário Final que deve ser mostrado*/
-function manipulateSelectEnd(divTime){
-	for(var i = 0; i < endTime.length; i++){
+function manipulateSelectEnd(divTime, element){
+	var tdColumns = element.parentNode.querySelectorAll("td");
+
+	for(var i = 0; i<tdColumns.length;i++){
+		if(tdColumns[i]===element){
+			var idColumn = i;
+		}
+	}
+
+	for(var i = 0; i < atendimentoTime.length; i++){
 		if(endTime[i].textContent>divTime.textContent){
-			endTime[i].classList.add("show");
+			var all = atendimentoTime[i].parentNode.querySelectorAll("td");
+			if(all[idColumn].textContent=="" || all[idColumn].textContent==element.textContent){
+				endTime[i].classList.add("show");
+			}else{
+				i = atendimentoTime.length;
+			}
 		}
 	}
 }

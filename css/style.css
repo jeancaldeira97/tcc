@@ -1,4 +1,4 @@
-body {
+ body {
 	color: #000;
 	font: 0.75rem Arial, sans-serif;
 	width: 100%;
@@ -47,14 +47,16 @@ body {
 
 
 
-table {
+#agenda {
 width: 60%;
 border-collapse: collapse;
 font-size: 0.75rem;
 font-family: Geneva, Verdana, sans-serif;
+position: relative;
+float: left;
+margin-left: 3rem;
+margin-top: 2rem;
 }
-
-
 
 th {
 background-color: rgba(0,0,0,.8);
@@ -92,12 +94,8 @@ color:#FFF;
 .select:hover{
 	background-color: red;
 }
-#agenda{
-	position: relative;
-	float: left;
-	margin-left: 3rem;
-	margin-top: 7rem;
-}
+
+
 
 #cadastrar-horario{
 	position: relative;
