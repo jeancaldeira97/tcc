@@ -1,13 +1,16 @@
-var parallax= document.querySelector("#conteudo");
-window.addEventListener("scroll", function() {
+var parallax= document.querySelectorAll(".parallax");
+
+parallax.forEach(function(element){
+	window.addEventListener("scroll", function() {
     var scrolledHeight= window.pageYOffset,
-    limit= parallax.offsetTop+ parallax.offsetHeight;
-    if(scrolledHeight > parallax.offsetTop && scrolledHeight <= limit) {
-        parallax.style.backgroundPositionY= (scrolledHeight - parallax.offsetTop) /1.5+ "px";
+    limit=element.offsetTop+element.offsetHeight;
+    if(scrolledHeight >element.offsetTop && scrolledHeight <= limit) {
+       element.style.backgroundPositionY= (scrolledHeight -element.offsetTop) /1.5+ "px";
     } 
     else {
-        parallax.style.backgroundPositionY= "0";
+       element.style.backgroundPositionY= "0";
     }
+	});
 });
 
 
