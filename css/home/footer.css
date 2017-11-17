@@ -1,0 +1,33 @@
+/*--Footer.css--*/
+
+.footer{
+	height: 8rem;
+	width: 100%;
+}
+
+.footer_contacts{
+	width: 100%;
+	height: 4rem;
+	background-color: rgb(53,53,59);
+}
+
+.last-part{
+	height: 4rem;
+	width: 100%;
+	background-color: rgb(41,41,45);
+	text-align: center;
+}
+
+.last-part_copy{
+	color: rgb(163,163,169);
+	position: absolute;
+	margin-left: 2rem;
+	padding-top: 1.7rem;
+}
+
+.last-part_logotext{
+	font-size: 2rem;
+	padding-top: 1.1rem;
+	position: relative;
+	float: center;
+}

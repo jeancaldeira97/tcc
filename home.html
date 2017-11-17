@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html>
 	<head>
+			<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width">
 			<title>Agendamento</title>
 			<link rel="stylesheet" type="text/css" href="css/reset.css">
 			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-			<link rel="stylesheet" type="text/css" href="css/home.css">
+			<link rel="stylesheet" type="text/css" href="css/home/index.css">
 	</head>
 
 	<body>
 	
-		<nav class="navmenu">
-			<h1 class="navmenu_logotext logotext--style">Organized.com</h1>
-		</nav>
-
-		<header class="header parallax">		
-				<div class="header_layer layer--default">
-					<h1 class="header_layer_title logotext--style">Organized.com</h1>
-					<p class="header_layer_paragraph">Gerencie seu estabelecimento através deste sistema</p>
-					<button class="header_layer_button"><span>Cadastre-se agora</span></button>
-					<p class="header_layer_paragraph"><i class="arrow--style"></i></p>
-				</div>
+		<header class="navmenu">
+			<button class="menu-abrir">Abre Menu</button>
+			<h1 class="nav-title_logotext logotext">Organized.com</h1>
+			<nav class="nav">
+					<button class="menu-fechar">Fecha Menu</button>
+					<ul class="nav-buttons_list list">
+						<li class="list_child">Sign in</li>
+						<li class="list_child">Contate-nos</li>
+					</ul>
+			</nav>
 		</header>
 
-		<section class="section section--white">
-			<div class="section_div"><img class="section_div_image" src="images/relogio.png"></div>
-			<div class="section_div">
-				<h2 class="section_div_title">AGENDE OS ATENDIMENTOS</h2>
-				<p class="section_div_paragraph">Na aba <span class="paragraph--span">HORÁRIOS</span> você pode organizar seus atendimentos, podendo otimizar sua planilha
-				 de acordo com o seu perfil e metódo de trabalho.
-				 </p>
-			</div>
-		</section>
+		<main>
+			
+			<section class="header parallax">		
+				<div class="header_layer layer">
+					<h1 class="layer_title logotext">Organized.com</h1>
+					<p class="layer_paragraph">Gerencie seu estabelecimento através deste sistema</p>
+					<button class="layer_button"><span>Cadastre-se agora</span></button>
+					<p class="layer_paragraph arrow"><i class="arrow_style"></i></p>
+				</div>
+			</section>
 
-		<section class="section section--green">
-			<div class="section_div">
-				<h2 class="section_div_title">CADASTRO DE CLIENTES</h2>
-				<p class="section_div_paragraph">Mantenha o cadastro de clientes atualizado através da aba <span class="paragraph--span">CLIENTES</span>, esta contém todo histórico de atendimentos dos clientes.
-				 </p>
-			</div>
-			<div class="section_div"><img class="section_div_image" src="images/cliente.png"></div>
-		</section>
+			<section class="section section--white">
+				<div class="section_div icon sec-img"><img class="icon_image" src="images/relogio.png"></div>
+				<div class="section_div text-div">
+					<h2 class="text-div_title">AGENDE OS ATENDIMENTOS</h2>
+					<p class="text-div_paragraph description">Na aba <span class="description_span">HORÁRIOS</span> você pode organizar seus atendimentos, podendo otimizar sua planilha
+					 de acordo com o seu perfil e metódo de trabalho.
+					 </p>
+				</div>
+			</section>
 
-		<section class="section section--transparent parallax">
-			<div class="section_layer layer--default">
-				<h2 class="section_layer_title">CONTROLE DE LUCROS</h2>
-				<p class="section_layer_paragraph">Na janela <span class="paragraph--span">LUCRATIVIDADE</span> poderemos encontrar estatísticas, dados financeiro e profissionais.Nesta aba você pode conferir os dias com maior número de atendimento, além de uma média de lucro semanal/mensal, entre outros dados.</p>
-			</div>
-		</section>
+			<section class="section section--green">
+				<div class="section_div text-div">
+					<h2 class="text-div_title">CADASTRO DE CLIENTES</h2>
+					<p class="text-div_paragraph description">Mantenha o cadastro de clientes atualizado através da aba <span class="description_span">CLIENTES</span>, esta contém todo histórico de atendimentos dos clientes.
+					 </p>
+				</div>
+				<div class="section_div icon sec-img"><img class="icon_image" src="images/cliente.png"></div>
+			</section>
 
-		<section class="section section--white">
-			<div class="section_div"><img class="section_div_image" src="images/goals.png"></div>
-			<div class="section_div">
-				<h2 class="section_div_title">ATINJA SEUS OBJETIVOS</h2>
-				<p class="section_div_paragraph">Trace novos <span class="paragraph--span">OBJETIVOS</span> sem perder o foco, tendo acesso a todos os dados e estimativas referentes aos mesmos.
-				 </p>
-			</div>
-		</section>
+			<section class="section section--transparent parallax">
+				<div class="section_layer layer section-parallax">
+					<h2 class="section-parallax_title">CONTROLE DE LUCROS</h2>
+					<p class="section-parallax_paragraph description">Na janela <span class="description_span">LUCRATIVIDADE</span> poderemos encontrar estatísticas, dados financeiro e profissionais.Nesta aba você pode conferir os dias com maior número de atendimento, além de uma média de lucro semanal/mensal, entre outros dados.</p>
+				</div>
+			</section>
 
+			<section class="section section--white">
+				<div class="section_div icon sec-img"><img class="icon_image" src="images/goals.png"></div>
+				<div class="section_div text-div">
+					<h2 class="text-div_title">ATINJA SEUS OBJETIVOS</h2>
+					<p class="text-div_paragraph description">Trace novos <span class="description_span">OBJETIVOS</span> sem perder o foco, tendo acesso a todos os dados e estimativas referentes aos mesmos.
+					 </p>
+				</div>
+			</section>
+
+		</main>
+		
 		<footer class="footer">
 			<div class="footer_contacts">
 			</div>
-			<div class="footer_end">
-				<h4 class="footer_end_copy">&copy; Jean Caldeira</h4>
-				<h1 class="footer_end_logotext logotext--style">Organized.com</h1>
+			<div class="footer_last last-part">
+				<h4 class="last-part_copy">&copy; Jean Caldeira</h4>
+				<h1 class="last-part_logotext logotext">Organized.com</h1>
 			</div>	
-		</footer>
+		</footer>-->
 	<script src="js/home.js"></script>
+	<script src="js/home2.js"></script>
 	</body>
 </html>

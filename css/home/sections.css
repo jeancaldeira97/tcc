@@ -1,37 +1,17 @@
-body {
-	color: #000;
-	font: 0.75rem Arial, sans-serif;
-	width: 100%;
-	position: absolute;
-	color:white;
-	margin: 0;
-	padding: 0;
-}
-
-
-/*-- Logo.css --*/
-.logotext{
-	color:rgb(22,171,156);
-	font-family: 'aileronsregular';
-}
-
-
-
-
 /*-- Body.css--*/
 .section{
-	position: relative;
+	
 	width: 100%;
 	height: 20rem;
 }
 
 
 .section_div{
-	position: relative;
+	
 	float: left;
 	text-align: center;
 	height: 20rem;
-	width: 50%;
+	width: 100%;
 }
 
 .icon_image{
@@ -72,7 +52,7 @@ body {
 	margin: 2rem 2rem 0 2rem;
 }
 
-/*--Section.css--*/
+/*--Section-modifiers.css--*/
 .section--green{
 	background-color: rgb(22,171,156);
 }
@@ -84,12 +64,42 @@ body {
 
 .section--transparent{
 	color: white;
-	background: url("../images/back2.jpg");
+	background: url("../../images/back2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 
+		.sec-img{
+	display: none;
+}
 
 
+@media screen and (min-width: 1023px) { 
+	 .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+	.sec-img{
+	display: block;
+}
+
+.section_div{
+	position: relative;
+	float: left;
+	text-align: center;
+	height: 20rem;
+	width: 50%;
+}
+
+.arrow--style{
+	margin-top: 2.5rem;
+}
+
+.nav-title_logotext{
+  font-size: 2.5rem;
+  float: left;
+  margin-left: 38%;
+}
+}
