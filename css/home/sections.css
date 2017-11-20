@@ -31,7 +31,7 @@
 }
 
 .text-div_paragraph{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin: 2rem 1.5rem 0 1.5rem;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .section-parallax_paragraph{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin: 2rem 2rem 0 2rem;
 }
 
@@ -68,38 +68,54 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
-		.sec-img{
-	display: none;
+.sec-img{
+  display: none;
 }
 
-
 @media screen and (min-width: 1023px) { 
-	 .menu-abrir,
+.section-parallax_paragraph{
+	font-size: 1.2rem;
+}
+	.text-div_paragraph{
+	font-size: 1.2rem;
+}
+    .layer_title{
+  font-size: 3.5rem;
+  padding-top: 7rem;
+}
+
+.layer_paragraph{
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+   .menu-abrir,
     .menu-fechar {
         display: none;
     }
-	.sec-img{
-	display: block;
-}
 
 .section_div{
-	position: relative;
-	float: left;
-	text-align: center;
-	height: 20rem;
-	width: 50%;
+  position: relative;
+  float: left;
+  text-align: center;
+  height: 20rem;
+  width: 50%;
+}
+  .sec-img{
+  display: block;
 }
 
+
+
 .arrow--style{
-	margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .nav-title_logotext{
   font-size: 2.5rem;
   float: left;
-  margin-left: 38%;
+  margin-left: 4rem;
+  margin-top: 0;
 }
+
 }
+
