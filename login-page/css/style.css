@@ -1,0 +1,57 @@
+*{
+	padding:0;
+	margin: 0;
+}
+body {
+	color: #000;
+	font: 0.75rem Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	 display: table;
+	}
+
+
+/*-- Logo.css --*/
+
+.container{
+	width: 100%;
+	height: 100%;
+}
+
+.container-child{
+	position: relative;
+	float: left;
+}
+
+.left-child{
+	width: 60%;
+	height: 100%;
+	background-color: rgba(0,0,0,.85);
+}
+
+.right-child{
+	width: 40%;
+	height: 100%;
+	background-color: rgb(22,171,156);
+}
+.login{
+	width: 60%;
+	height: 30rem;
+	margin: 20rem auto 0 auto;
+	text-align: center;
+}
+
+.login h2{
+	font-size: 2.8rem;
+	color: white;
+	font-family: 'aqua_grotesqueregular';
+}
+
+
+
+.logotext{
+	color:rgb(22,171,156);
+	font-family: 'aileronsregular';
+	font-size: 2.7rem;
+}
