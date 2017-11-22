@@ -11,6 +11,12 @@ body {
 	 display: table;
 	}
 
+a{
+	color: inherit; 
+  	text-decoration: inherit;
+}
+
+
 
 /*-- Logo.css --*/
 
@@ -19,26 +25,24 @@ body {
 	height: 100%;
 }
 
-.container-child{
-	position: relative;
-	float: left;
-}
 
 .left-child{
-	width: 60%;
-	height: 100%;
+	width: 100%;
+	height: 30rem;
+	padding-top: 2rem;
 	background-color: rgba(0,0,0,.85);
+	text-align: center;
 }
 
 .right-child{
-	width: 40%;
-	height: 100%;
+	width: 100%;
+	height: 30rem;
 	background-color: rgb(22,171,156);
 }
 .login{
 	width: 60%;
-	height: 30rem;
-	margin: 20rem auto 0 auto;
+	height: 10rem;
+	margin: 5rem auto 0 auto;
 	text-align: center;
 }
 
@@ -53,5 +57,172 @@ body {
 .logotext{
 	color:rgb(22,171,156);
 	font-family: 'aileronsregular';
+	font-size: 2rem;
+}
+
+.register-content{
+	width: 80%;
+	height: 18rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	margin: 1rem 0 0 2rem;
+	text-align: left;
+}
+
+.container{
+	color: white;
+	position: absolute;
+}
+
+.container-title{
+	font-size: 1.6rem;
+	font-family: 'aqua_grotesqueregular';
+}
+
+.container-sub{
+	margin-top: 0.4rem;
+	font-size: 1.1rem;
+	color: gray;
+}
+
+.container-description{
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+	color: gray;
+}
+
+.back--button {
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.8rem;
+  width: 9rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-left: -0.6rem;
+}
+
+.back--button span {
+  cursor: pointer;
+      position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.back--button span:after {
+  content:"\00ab";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -1.25rem;
+  transition: 0.5s;
+}
+
+.back--button:hover span {
+  padding-left: 1.56rem;
+}
+
+.back--button:hover span:after {
+  opacity: 1;
+  left:0;
+}
+
+
+
+.layer_button {
+  display: inline-block;
+  position: relative;
+  float: right;
+  border-radius: 0.25rem;
+  background-color: rgb(22,171,156);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.8rem;
+  width: 9rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top:3rem;
+}
+
+.layer_button span {
+  cursor: pointer;
+      position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.layer_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1.25rem;
+  transition: 0.5s;
+}
+
+.layer_button:hover span {
+  padding-right: 1.56rem;
+}
+
+.layer_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) { 
+.container-child{
+	position: relative;
+	float: left;
+}
+.left-child{
+	width: 60%;
+	height: 100%;
+	background-color: rgba(0,0,0,.85);
+	text-align: center;
+	padding-top: 0;
+}
+
+.right-child{
+	width: 40%;
+	height: 100%;
+	background-color: rgb(22,171,156);
+}
+.login{
+	width: 60%;
+	height: 30rem;
+	margin: 5rem auto 0 auto;
+	text-align: center;
+}
+.register-content{
+	width: 80%;
+	height: 24rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	margin: 7rem 0 0 2rem;
+	text-align: left;
+}
+
+.logotext{
+	color:rgb(22,171,156);
+	font-family: 'aileronsregular';
 	font-size: 2.7rem;
+	margin-top: 2rem;
+}
+.container-title{
+	font-size: 2rem;
+	font-family: 'aqua_grotesqueregular';
+}
+.container-sub{
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	color: gray;
+}
+
 }
