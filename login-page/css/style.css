@@ -16,6 +16,12 @@ a{
   	text-decoration: inherit;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 
 /*-- Logo.css --*/
@@ -40,14 +46,15 @@ a{
 	background-color: rgb(22,171,156);
 }
 .login{
-	width: 60%;
+	width: 15rem;
 	height: 10rem;
 	margin: 5rem auto 0 auto;
 	text-align: center;
 }
 
 .login h2{
-	font-size: 2.8rem;
+	font-size: 2rem;
+	margin-bottom: 1rem;
 	color: white;
 	font-family: 'aqua_grotesqueregular';
 }
@@ -175,12 +182,45 @@ a{
   opacity: 1;
   right: 0;
 }
+.input{
+	margin: 1rem auto 1rem auto;
+}
+
+input[type=text],input[type=password], input[type=text]::placeholder,input[type=password]::placeholder  {
+	width: 100%;
+    border: none;
+    border-bottom: 0.08rem solid rgba(0,0,0,.85);
+    background-color: inherit;
+    color: white;
+    font-size: 1rem;
+    
+}
+.floating-label {
+  position: relative;
+  font-size: 1rem;
+  pointer-events: none;
+  left: -6rem;
+  top: -40px;
+  transition: 0.2s ease all;
+}
+input:focus ~ .floating-label{
+	 font-size: 1rem;
+   left: -7.5rem;
+  top: -60px;
+}
+
 
 @media screen and (min-width: 768px) { 
 .container-child{
 	position: relative;
 	float: left;
 }
+.login h2{
+	font-size: 2.8rem;
+	color: white;
+	font-family: 'aqua_grotesqueregular';
+}
+
 .left-child{
 	width: 60%;
 	height: 100%;
@@ -195,9 +235,9 @@ a{
 	background-color: rgb(22,171,156);
 }
 .login{
-	width: 60%;
-	height: 30rem;
-	margin: 5rem auto 0 auto;
+	width: 18rem;
+	height: 25rem;
+	margin: 10rem auto 0 auto;
 	text-align: center;
 }
 .register-content{
@@ -225,4 +265,11 @@ a{
 	color: gray;
 }
 
+}
+
+.layer--changes{
+	background-color: white;
+	color: black;
+	margin: 1rem 0 1rem 0;
+	float: none;
 }
