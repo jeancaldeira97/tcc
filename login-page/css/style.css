@@ -189,11 +189,11 @@ button:focus {
 	display: block;
 }
 
-input[type=text],input[type=password], input[type=text]::placeholder,input[type=password]::placeholder  {
+input[type=text],input[type=password] {
 	width: 100%;
     border: none;
     border-bottom: 0.08rem solid rgba(0,0,0,.85);
-    background-color: inherit;
+    background-color: transparent;
     color: white;
     font-size: 1rem;    
 }
@@ -240,7 +240,7 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 .login{
 	width: 18rem;
 	height: 25rem;
-	margin: 45% auto 0 auto;
+	margin: 40% auto 0 auto;
 	text-align: center;
 }
 .register-content{
