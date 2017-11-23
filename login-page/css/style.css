@@ -160,7 +160,7 @@ button:focus {
 
 .layer_button span {
   cursor: pointer;
-      position: relative;
+  position: relative;
   display: inline-block;
   transition: 0.5s;
 }
@@ -184,6 +184,7 @@ button:focus {
 }
 .input{
 	margin: 1rem auto 1rem auto;
+	display: block;
 }
 
 input[type=text],input[type=password], input[type=text]::placeholder,input[type=password]::placeholder  {
@@ -196,20 +197,23 @@ input[type=text],input[type=password], input[type=text]::placeholder,input[type=
     
 }
 .floating-label {
+	display: block;
   position: relative;
   font-size: 1rem;
   pointer-events: none;
-  left: -6rem;
   top: -40px;
-  transition: 0.2s ease all;
+  left: 0;
+  transition: 0.9s ease all;
 }
-input:focus ~ .floating-label{
+input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	 font-size: 1rem;
    left: -7.5rem;
   top: -60px;
 }
 
-
+input:focus ~ .second-label, input:not(:focus):valid ~ .second-label{
+ left: -6.8rem;
+}
 @media screen and (min-width: 768px) { 
 .container-child{
 	position: relative;
@@ -217,6 +221,7 @@ input:focus ~ .floating-label{
 }
 .login h2{
 	font-size: 2.8rem;
+	margin-bottom: 2rem;
 	color: white;
 	font-family: 'aqua_grotesqueregular';
 }
