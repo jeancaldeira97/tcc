@@ -34,7 +34,7 @@ button:focus {
 
 .left-child{
 	width: 100%;
-	height: 30rem;
+	height: 32rem;
 	padding-top: 2rem;
 	background-color: rgba(0,0,0,.85);
 	text-align: center;
@@ -42,7 +42,7 @@ button:focus {
 
 .right-child{
 	width: 100%;
-	height: 30rem;
+	height: 32rem;
 	background-color: rgb(22,171,156);
 }
 .login{
@@ -66,7 +66,9 @@ button:focus {
 	font-family: 'aileronsregular';
 	font-size: 2rem;
 }
-
+.forget-password{
+	font-size: 1.1rem;
+}
 .register-content{
 	width: 80%;
 	height: 18rem;
@@ -193,18 +195,18 @@ input[type=text],input[type=password], input[type=text]::placeholder,input[type=
     border-bottom: 0.08rem solid rgba(0,0,0,.85);
     background-color: inherit;
     color: white;
-    font-size: 1rem;
-    
+    font-size: 1rem;    
 }
 .floating-label {
 	display: block;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.85rem;
   pointer-events: none;
   top: -40px;
   left: 0;
   transition: 0.9s ease all;
 }
+
 input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	 font-size: 1rem;
    left: -7.5rem;
@@ -242,7 +244,7 @@ input:focus ~ .second-label, input:not(:focus):valid ~ .second-label{
 .login{
 	width: 18rem;
 	height: 25rem;
-	margin: 10rem auto 0 auto;
+	margin: 45% auto 0 auto;
 	text-align: center;
 }
 .register-content{
@@ -250,7 +252,7 @@ input:focus ~ .second-label, input:not(:focus):valid ~ .second-label{
 	height: 24rem;
 	padding-top: 1rem;
 	padding-left: 1rem;
-	margin: 7rem 0 0 2rem;
+	margin: 25% 0 0 2rem;
 	text-align: left;
 }
 
@@ -274,7 +276,16 @@ input:focus ~ .second-label, input:not(:focus):valid ~ .second-label{
 
 .layer--changes{
 	background-color: white;
+	position: relative;
+	float: left;
 	color: black;
 	margin: 1rem 0 1rem 0;
 	float: none;
 }
+
+.blocking-span{
+	position: relative;
+	width: 100%;
+	height: 3rem;
+}
+
