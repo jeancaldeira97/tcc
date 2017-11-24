@@ -19,33 +19,35 @@ fecharButton.forEach(function(element){
 enviaBtn.onclick = appearConfirmaEmail;
 
 function appearRegistre(){
-    if(table.classList.contains('registre-se')==false){
-    	table.classList.add("registre-se");
-    }
+		clearAll();
+    	registraBox.classList.add("appear");
+    	table.classList.add("registre-se");	
 };
-
+function appearRecuperar(){
+		clearAll();
+    	recuperaBox.classList.add("appear");
+    	table.classList.add("registre-se");
+};
 function appearConfirma(){
-	registraBox.classList.add("disappear");
+	registraBox.classList.remove("appear");
 	confirmaBox.classList.add("appear");
 };
 
+
+function appearConfirmaEmail(){
+	recuperaBox.classList.remove("appear");
+	confirmaRecuperaBox.classList.add("appear");
+}
+
 function disappearRegistre(){
-	registraBox.classList.remove("disappear");
 	confirmaBox.classList.remove("appear");
-	recuperaBox.classList.remove("disappear");
 	confirmaRecuperaBox.classList.remove("appear");
 	table.classList.remove('registre-se');
 };
 
-function appearRecuperar(){
-    if(table.classList.contains('registre-se')==false){
-    	recuperaBox.classList.remove("disappear");
-    	registraBox.classList.add("disappear");
-    	table.classList.add("registre-se");
-    }
-};
-
-function appearConfirmaEmail(){
-	recuperaBox.classList.add("disappear");
-	confirmaRecuperaBox.classList.add("appear");
+function clearAll(){
+		recuperaBox.classList.remove("appear");
+		confirmaRecuperaBox.classList.remove("appear");
+		registraBox.classList.remove("appear");
+		confirmaBox.classList.remove("appear");
 }

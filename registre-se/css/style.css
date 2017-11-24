@@ -237,6 +237,7 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	height: 50%;
 	margin: 20% auto 0 auto;
 	text-align: center;
+	display: none;
 }
 @media screen and (min-width: 768px) { 
 	.confirma-box{
@@ -349,13 +350,6 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	display: none;
 }
 
-.disappear{
-	display: none;
-}
-
-.appear{
-	display: block;
-}
 
 .confirma-box h2{
 	font-size: 2rem;
@@ -366,4 +360,8 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 .confirma-box p{
 	font-size: 1.3rem;
 	color: white;
+}
+
+.appear{
+	display: block;
 }
