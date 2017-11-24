@@ -66,7 +66,9 @@ button:focus {
 	font-family: 'aileronsregular';
 	font-size: 2rem;
 }
+
 .forget-password{
+	cursor: pointer;
 	font-size: 1.1rem;
 }
 .register-content{
@@ -215,31 +217,25 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	background: rgb(00,138,126);
       margin: 0;
       height: 100%;
-      width: 35%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: -90%;
-
-      transition: left 0.3s ease-out;
-}
-
-	.registre-se{
-      margin: 0;
-      height: 100%;
       width: 100%;
       position: fixed;
       z-index: 1;
       top: 0;
-      left: 0;
-	  text-align: center;
+      left: -100%;
+  	text-align: center;
       transition: left 0.3s ease-out;
 }
 
+	.registre-se{
+      left: 0;
+}
+.container-registre-se .input{
+	width: 50%;
+}
 .registre-box{
 	width: 100%;
 	height: 50%;
-	margin: 10% auto 0 auto;
+	margin: 20% auto 0 auto;
 	text-align: center;
 }
 @media screen and (min-width: 768px) { 
@@ -252,34 +248,26 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 }
 	.container-registre-se{
 	background: rgb(00,138,126);
-      padding: 1em 3em;
       margin: 0;
       height: 100%;
-      width: 35%;
+      width: 40%;
       position: fixed;
       z-index: 1;
       top: 0;
       left: -90%;
-
+		
       transition: left 0.3s ease-out;
 }
 
 	.registre-se{
-      padding: 1em 3em;
-      margin: 0;
-      height: 100%;
-      width: 35%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
       left: 0;
-
-      transition: left 0.3s ease-out;
 }
 .container-child{
 	position: relative;
 	float: left;
 }
+
+
 .login h2{
 	font-size: 2.8rem;
 	margin-bottom: 2rem;
@@ -343,13 +331,8 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 	float: none;
 }
 
-}
-.registre-box{
-	width: 18rem;
-	height: 45rem;
-	margin: 15% auto 0 auto;
-	text-align: center;
-}
+
+
 
 .registre-box h2{
 	font-size: 2rem;
@@ -361,7 +344,7 @@ input:focus ~ .floating-label, input:not(:focus):valid ~ .floating-label{
 .confirma-box{
 	width: 18rem;
 	height: 20rem;
-	margin: 10% auto 0 auto;
+	margin: 30% auto 0 auto;
 	text-align: center;
 	display: none;
 }
