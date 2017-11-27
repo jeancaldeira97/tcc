@@ -3,16 +3,14 @@
 	<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width">
-			<title>Login</title>
-			<link rel="stylesheet" type="text/css" href="css/reset.css">
-			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<title>Página de Login</title>
+			<link rel="stylesheet" type="text/css" href="css/conect.css">
 	</head>
 
 	<body>
 		<div class="container">
-			<div class="container-child right-child">
-				<a href="../home.html"><button class="back--button"><span>Home</span></button></a>
+			<div class="container-child left-child">
+				<a href="../home-page/home.html"><button class="back--button"><span>Home</span></button></a>
 				<div class="login">
 					<h2>LOGIN</h2>
 					<span>
@@ -23,20 +21,68 @@
 						<input class="input" type="password" name="Password" required>
 						<span class="floating-label">Senha:</span>
 					</span>
-					<a href="../index.html"><button class="layer_button layer--changes"><span>Entrar</span></button></a>
+					<a href="../scheduling-page/index.html"><button class="layer_button layer--changes"><span>Entrar</span></button></a>
 					<p class="forget-password">Esqueceu a senha?</p>
 				</div>
 			</div>
-			<div class="container-child left-child">
-				<h1 class="logotext">ORGANIZED.COM</h1>
-				<div class="register-content container">
-					<h2 class="container-title">Bem-vindo</h2>
-					<h3 class="container-sub">Crie sua conta e gerencie seu estabelecimento de forma eficiente.</h3>
-					<p class="container-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis augue metus, accumsan id magna eget, fringilla tempus sem. Aliquam erat volutpat. Nulla rhoncus non elit eget mollis. Nunc blandit massa non leo ornare molestie. Aliquam ex quam, commodo vitae luctus vitae, viverra sit amet nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices convallis diam nec rutrum. Curabitur accumsan mi lorem, in congue tellus hendrerit at.</p>
-					<a href="../index.html"><button class="layer_button"><span>Registre-se</span></button></a>
+			<div class="container-child right-child">
+				<a href="../home-page/home.html"><h1 class="logotext">ORGANIZED.COM</h1></a>
+				<div class="register-content">
+					<h2 class="register-content-title">Bem-vindo</h2>
+					<h3 class="register-content-sub">Crie sua conta e gerencie seu estabelecimento de forma eficiente.</h3>
+					<p class="register-content-description">Faça seu registro de forma rápida e faça parte do melhor sistema para gerenciamento de estabelecimentos de estética, tenha acesso a todas as ferramentas exclusivas para controle de atendimentos, dados financeiros e cadastros de clientes.</p>
+					<button class="layer_button regis"><span class="">Registre-se</span></button>
+				</div>
+			<div class="section-hidde">
+				<div class="registre-box">
+					<h2>REGISTRE-SE</h2>
+					<span>
+						<input class="input" type="text" name="User" required>
+						<span class="floating-label">Nome:</span>
+					</span>
+					<span>
+						<input class="input" type="text" name="email" required>
+						<span class="floating-label">Email:</span>
+					</span>
+					<span>
+						<input class="input" type="tel" name="telefone" required>
+						<span class="floating-label">Telefone:</span>
+					</span>
+					<span>
+						<input class="input" type="password" name="Password-first" required>
+						<span class="floating-label">Senha:</span>
+					</span>
+					<span>
+						<input class="input" type="password" name="Password-second" required>
+						<span class="floating-label">Repita a senha:</span>
+					</span>
+					<button class="layer_button layer--changes confirma"><span>Cadastrar</span></button>
+				</div>
+				<div class="registre-box recuperar">
+					<h2>RECUPERE SUA SENHA</h2>
+					<span>
+						<input class="input" type="text" name="User" required>
+						<span class="floating-label">Nome:</span>
+					</span>
+					<span>
+						<input class="input" type="text" name="email" required>
+						<span class="floating-label">Email:</span>
+					</span>
+					<button class="layer_button layer--changes envia-button "><span>Enviar</span></button>
+				</div>
+				<div class="confirma-box">
+					<h2>USUÁRIO CADASTRADO COM SUCESSO!</h2>
+					<p>Um email de confirmação será enviado para você.</p>
+					<button class="layer_button layer--changes feche"><span>Fechar</span></button>
+				</div>
+				<div class="confirma-box confirma-recupera-box">
+					<h2>RECUPERAÇÃO DE SENHA ENVIADA!</h2>
+					<p>Um email de recuperação será enviado para você.</p>
+					<button class="layer_button layer--changes feche"><span>Fechar</span></button>
 				</div>
 			</div>
+			</div>
 		</div>
-
+	<script src="index.js"></script>
 	</body>
 </html>

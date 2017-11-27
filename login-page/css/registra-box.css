@@ -1,0 +1,15 @@
+.registre-box{
+	width: 100%;
+	height: 50%;
+	margin: 20% auto 0 auto;
+	text-align: center;
+	display: none;
+}
+
+.registre-box h2{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: white;
+	font-family: 'aqua_grotesqueregular';
+}
+

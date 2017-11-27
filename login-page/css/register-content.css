@@ -1,0 +1,49 @@
+
+.logotext{
+	font-size: 2rem;
+}
+
+.register-content{
+	width: 80%;
+	height: 18rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	margin: 1rem 0 0 2rem;
+	text-align: left;
+}
+
+.register-content-title{
+	font-size: 1.6rem;
+	font-family: 'aqua_grotesqueregular';
+}
+
+.register-content-sub{
+	margin-top: 0.4rem;
+	font-size: 1.1rem;
+	color: gray;
+}
+
+.register-content-description{
+	margin-top: 1.5rem;
+	font-size: 0.9rem;
+	color: gray;
+}
+
+@media screen and (min-width: 768px) {
+	.register-content{
+	height: 20rem;
+	margin: 20% 0 0 2rem;
+	}
+	.logotext{
+		font-size: 2.7rem;
+		margin-top: 2rem;
+	}
+
+	.register-content-title{
+		font-size: 2rem;
+	}
+	.register-content-sub{
+		margin-top: 0.5rem;
+		font-size: 1.2rem;
+	}
+}
