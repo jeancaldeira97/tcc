@@ -1,53 +1,60 @@
-var registre = document.querySelector(".regis");
-var confirma = document.querySelector(".confirma");
-var confirmaBox = document.querySelector(".confirma-box");
-var registraBox = document.querySelector(".registre-box");
-var table = document.querySelector(".section-hidde");
-var fecharButton = document.querySelectorAll(".feche");
-var esquecerButton = document.querySelector(".forget-password")
-var recuperaBox = document.querySelector(".recuperar");
-var enviaBtn = document.querySelector(".envia-button");
-var confirmaRecuperaBox = document.querySelector(".confirma-recupera-box");
-console.log(registre);
+var table = document.querySelector(".js-hidden-div");
 
-registre.onclick = appearRegistre;
-esquecerButton.onclick = appearRecuperar;
-confirma.onclick = appearConfirma;
-fecharButton.forEach(function(element){
-	element.onclick = disappearRegistre;
+var registerForm = document.querySelector(".js-register-form");
+var registerMessage = document.querySelector(".js-register-message");
+
+var recoverFrom = document.querySelector(".js-recover-form");
+var recoverMessage = document.querySelector(".js-recover-message");
+
+var registerBtn = document.querySelector(".js-register-button");
+var confirmBtn = document.querySelector(".js-confirm");
+
+var recoverBtn = document.querySelector(".js-forget");
+var sendBtn = document.querySelector(".js-send");
+
+var closeBtn = document.querySelectorAll(".js-close-button");
+
+
+registerBtn.onclick = registerAppear;
+recoverBtn.onclick = recoverAppear;
+
+confirmBtn.onclick = registerMessageAppear;
+sendBtn.onclick = recoverMessageAppear;
+
+closeBtn.forEach(function(element){
+	element.onclick = hiddenSectionDisappear;
 });
-enviaBtn.onclick = appearConfirmaEmail;
 
-function appearRegistre(){
+
+function registerAppear(){
 		clearAll();
-    	registraBox.classList.add("appear");
-    	table.classList.add("section-show");	
+    	registerForm.classList.add("appear");
+    	table.classList.add("section-appear");	
 };
-function appearRecuperar(){
-		clearAll();
-    	recuperaBox.classList.add("appear");
-    	table.classList.add("section-show");
+function recoverAppear(){
+	    clearAll();
+    	recoverFrom.classList.add("appear");
+    	table.classList.add("section-appear");
 };
-function appearConfirma(){
-	registraBox.classList.remove("appear");
-	confirmaBox.classList.add("appear");
+
+function registerMessageAppear(){
+	registerForm.classList.remove("appear");
+	registerMessage.classList.add("appear");
 };
 
 
-function appearConfirmaEmail(){
-	recuperaBox.classList.remove("appear");
-	confirmaRecuperaBox.classList.add("appear");
+function recoverMessageAppear(){
+	recoverFrom.classList.remove("appear");
+	recoverMessage.classList.add("appear");
 }
 
-function disappearRegistre(){
-	confirmaBox.classList.remove("appear");
-	confirmaRecuperaBox.classList.remove("appear");
-	table.classList.remove('section-show');
+function hiddenSectionDisappear(){
+	table.classList.remove('section-appear');
 };
 
 function clearAll(){
-		recuperaBox.classList.remove("appear");
-		confirmaRecuperaBox.classList.remove("appear");
-		registraBox.classList.remove("appear");
-		confirmaBox.classList.remove("appear");
+		recoverFrom.classList.remove("appear");
+		recoverMessage.classList.remove("appear");
+		registerForm.classList.remove("appear");
+		registerMessage.classList.remove("appear");
 }

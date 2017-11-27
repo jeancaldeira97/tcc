@@ -3,86 +3,129 @@
 	<head>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width">
+			
 			<title>Página de Login</title>
-			<link rel="stylesheet" type="text/css" href="css/conect.css">
+			
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<link rel="stylesheet" type="text/css" href="css/login-structure.css">
+			<link rel="stylesheet" type="text/css" href="css/container-child.css">
+			<link rel="stylesheet" type="text/css" href="css/container-hidden.css">
+			<link rel="stylesheet" type="text/css" href="css/button.css">
 	</head>
 
 	<body>
 		<div class="container">
-			<div class="container-child left-child">
+			
+
+			<div class="container__child login-section">
+
 				<a href="../home-page/home.html"><button class="back--button"><span>Home</span></button></a>
-				<div class="login">
+				
+				<div class="login-section__form login-form">
 					<h2>LOGIN</h2>
+					
 					<span>
 						<input class="input" type="text" name="User" required>
 						<span class="floating-label">Nome:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="password" name="Password" required>
 						<span class="floating-label">Senha:</span>
 					</span>
-					<a href="../scheduling-page/index.html"><button class="layer_button layer--changes"><span>Entrar</span></button></a>
-					<p class="forget-password">Esqueceu a senha?</p>
+					
+					<a href="../scheduling-page/index.html"><button class="button button--changes"><span>Entrar</span></button></a>
+					<p class="login-form__forget js-forget">Esqueceu a senha?</p>
+
 				</div>
+
 			</div>
-			<div class="container-child right-child">
+			
+			<div class="container__child welcome-section">
+				
 				<a href="../home-page/home.html"><h1 class="logotext">ORGANIZED.COM</h1></a>
-				<div class="register-content">
-					<h2 class="register-content-title">Bem-vindo</h2>
-					<h3 class="register-content-sub">Crie sua conta e gerencie seu estabelecimento de forma eficiente.</h3>
-					<p class="register-content-description">Faça seu registro de forma rápida e faça parte do melhor sistema para gerenciamento de estabelecimentos de estética, tenha acesso a todas as ferramentas exclusivas para controle de atendimentos, dados financeiros e cadastros de clientes.</p>
-					<button class="layer_button regis"><span class="">Registre-se</span></button>
+				
+				<div class="welcome-section__content welcome">
+					
+					<h2 class="welcome__title">Bem-vindo</h2>
+					<h3 class="welcome__sub">Crie sua conta e gerencie seu estabelecimento de forma eficiente.</h3>
+					<p class="welcome__description">Faça seu registro de forma rápida e faça parte do melhor sistema para gerenciamento de estabelecimentos de beleza, tenha acesso a todas as ferramentas exclusivas para controle de atendimentos, dados financeiros e cadastros de clientes.</p>
+					
+					<button class="button js-register-button"><span>Registre-se</span></button>
+
 				</div>
-			<div class="section-hidde">
-				<div class="registre-box">
-					<h2>REGISTRE-SE</h2>
+
+			</div>
+
+			<div class="container__hidden hidden-section js-hidden-div">
+				
+				<div class="hidden-section__div js-register-form">
+					
+					<h2 class="hidden-section__title">REGISTRE-SE</h2>
+					
 					<span>
 						<input class="input" type="text" name="User" required>
 						<span class="floating-label">Nome:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="text" name="email" required>
 						<span class="floating-label">Email:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="tel" name="telefone" required>
 						<span class="floating-label">Telefone:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="password" name="Password-first" required>
 						<span class="floating-label">Senha:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="password" name="Password-second" required>
 						<span class="floating-label">Repita a senha:</span>
 					</span>
-					<button class="layer_button layer--changes confirma"><span>Cadastrar</span></button>
+					
+					<button class="button button--changes js-confirm"><span>Cadastrar</span></button>
+				
 				</div>
-				<div class="registre-box recuperar">
-					<h2>RECUPERE SUA SENHA</h2>
+
+				<div class="hidden-section__div js-recover-form">
+
+					<h2 class="hidden-section__title">RECUPERE SUA SENHA</h2>
+					
 					<span>
 						<input class="input" type="text" name="User" required>
 						<span class="floating-label">Nome:</span>
 					</span>
+					
 					<span>
 						<input class="input" type="text" name="email" required>
 						<span class="floating-label">Email:</span>
 					</span>
-					<button class="layer_button layer--changes envia-button "><span>Enviar</span></button>
+					
+					<button class="button button--changes js-send"><span>Enviar</span></button>
 				</div>
-				<div class="confirma-box">
-					<h2>USUÁRIO CADASTRADO COM SUCESSO!</h2>
+
+				<div class="hidden-section__message js-register-message">
+					<h2 class="hidden-section__title">USUÁRIO CADASTRADO COM SUCESSO!</h2>
 					<p>Um email de confirmação será enviado para você.</p>
-					<button class="layer_button layer--changes feche"><span>Fechar</span></button>
+					<button class="button button--changes js-close-button"><span>Fechar</span></button>
 				</div>
-				<div class="confirma-box confirma-recupera-box">
-					<h2>RECUPERAÇÃO DE SENHA ENVIADA!</h2>
+
+				<div class="hidden-section__message js-recover-message">
+					<h2 class="hidden-section__title">RECUPERAÇÃO DE SENHA ENVIADA!</h2>
 					<p>Um email de recuperação será enviado para você.</p>
-					<button class="layer_button layer--changes feche"><span>Fechar</span></button>
+					<button class="button button--changes js-close-button"><span>Fechar</span></button>
 				</div>
-			</div>
+
 			</div>
 		</div>
+
 	<script src="index.js"></script>
 	</body>
 </html>
