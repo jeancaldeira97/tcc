@@ -88,10 +88,6 @@
   font-size: 1.5rem;
   margin-top: 2.5rem;
 }
-   .menu-abrir,
-    .menu-fechar {
-        display: none;
-    }
 
 .section_div{
   position: relative;
@@ -108,13 +104,6 @@
 
 .arrow--style{
   margin-top: 2.5rem;
-}
-
-.nav-title_logotext{
-  font-size: 2.5rem;
-  float: left;
-  margin-left: 4rem;
-  margin-top: 0;
 }
 
 }

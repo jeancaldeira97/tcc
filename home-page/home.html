@@ -4,27 +4,39 @@
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width">
 			<title>Home</title>
-			<link rel="stylesheet" type="text/css" href="css/conect.css">
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="css/header.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<link rel="stylesheet" type="text/css" href="css/layer.css">
+			<link rel="stylesheet" type="text/css" href="css/sections.css">
+			<link rel="stylesheet" type="text/css" href="css/footer.css">
+		
 	</head>
 
 	<body>
-	
-		<header class="navmenu">
+		
+		<header class="header">
+
 			<button class="menu-abrir">Abre Menu</button>
-			<a href="home.html"><h1 class="nav-title_logotext logotext">Organized.com</h1></a>
-			<nav class="nav">
+			<a href="../home-page/home.html"><h1 class="header__logotext logotext">Organized.com</h1></a>
+			
+			<nav class="header__nav nav-menu">
+					
 					<button class="menu-fechar">Fecha Menu</button>
-					<ul class="nav-buttons_list list">
-						<a href="../login-page/index.html"><li class="list_child">Entrar</li></a>
-						<a href="../contact-page/contact.html"><li class="list_child">Contate-nos</li></a>
-						<a href="#sectin"><li class="list_child">Sobre</li></a>
+					<ul class="nav-menu__list list">
+						<a href="../login-page/index.html"><li class="list__child">Entrar</li></a>
+						<a href="../contact-pagecontact.html"><li class="list__child">Contate-nos</li></a>
+						<a href="../home-page/home.html#sectin"><li class="list__child">Sobre</li></a>
 					</ul>
+
 			</nav>
+
 		</header>
 
 		<main>
 			
-			<section class="header parallax">		
+			<section class="main-section parallax">		
 				<div class="header_layer layer">
 					<h1 class="layer_title logotext">Organized.com</h1>
 					<p class="layer_paragraph">Gerencie seu estabelecimento de estética através desse sistema.</br> Uma ferramenta poderosa para controle de horários e estatísticas financeiras.</p>
@@ -71,13 +83,16 @@
 		</main>
 		
 		<footer class="footer">
-			<div class="footer_contacts">
+			
+			<div class="footer__first-div first-div"></div>
+
+			<div class="footer__last-div last-div">
+				<h4 class="last-div__copy">&copy; Jean Caldeira</h4>
+				<h1 class="last-div__logotext logotext">Organized.com</h1>
 			</div>
-			<div class="footer_last last-part">
-				<h4 class="last-part_copy">&copy; Jean Caldeira</h4>
-				<h1 class="last-part_logotext logotext">Organized.com</h1>
-			</div>	
+
 		</footer>
+
 	<script src="js/home.js"></script>
 	<script src="js/home2.js"></script>
 	</body>

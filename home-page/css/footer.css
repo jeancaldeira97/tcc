@@ -5,27 +5,27 @@
 	width: 100%;
 }
 
-.footer_contacts{
+.first-div{
 	width: 100%;
-	height: 4rem;
+	height: 50%;
 	background-color: rgb(53,53,59);
 }
 
-.last-part{
-	height: 4rem;
+.last-div{
 	width: 100%;
+	height: 50%;
 	background-color: rgb(41,41,45);
 	text-align: center;
 }
 
-.last-part_copy{
+.last-div__copy{
 	color: rgb(163,163,169);
 	position: absolute;
 	margin-left: 2rem;
 	padding-top: 1.7rem;
 }
 
-.last-part_logotext{
+.last-div__logotext{
 	font-size: 1.5rem;
 	padding-top: 1.5rem;
 	margin-right: 2rem;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (min-width: 1023px) { 
-.last-part_logotext{
+.last-div__logotext{
 	font-size: 2rem;
 	padding-top: 1.1rem;
 	margin-right: 0;
