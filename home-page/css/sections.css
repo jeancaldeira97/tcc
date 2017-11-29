@@ -1,20 +1,21 @@
-/*-- Body.css--*/
+/*--Seções--*/
 .section{
-	
 	width: 100%;
 	height: 20rem;
 }
 
-
-.section_div{
-	
+.section__div{
 	float: left;
 	text-align: center;
 	height: 20rem;
 	width: 100%;
 }
 
-.icon_image{
+.picture-div{
+  display: none;
+}
+
+.picture-div__image{
 	width: 14rem;
 	height: 13rem;
 	padding-top: 3.5rem;
@@ -22,7 +23,7 @@
 	padding-right: 4rem;
 }
 
-.text-div_title{
+.content-div__title{
 	letter-spacing: 0.15rem;
 	font-weight: bold;
 	font-size: 1.7rem;
@@ -30,16 +31,16 @@
 	margin-top:5rem;
 }
 
-.text-div_paragraph{
+.description{
 	font-size: 1rem;
 	margin: 2rem 1.5rem 0 1.5rem;
 }
 
-.description_span{
+.description__span{
 	font-weight: bold;
 }
 
-.section-parallax_title{
+.section-parallax__title{
 	letter-spacing: 0.15rem;
 	font-weight: bold;
 	font-size: 1.7rem;
@@ -47,12 +48,13 @@
 	padding-top: 4rem;
 }
 
-.section-parallax_paragraph{
+.section-parallax__paragraph{
 	font-size: 1rem;
 	margin: 2rem 2rem 0 2rem;
 }
 
-/*--Section-modifiers.css--*/
+
+/*-- Modificadores de sessões--*/
 .section--green{
 	background-color: rgb(22,171,156);
 }
@@ -68,43 +70,30 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sec-img{
-  display: none;
-}
 
+
+/*--Alterações Mobile--*/
 @media screen and (min-width: 1023px) { 
-.section-parallax_paragraph{
-	font-size: 1.2rem;
-}
-	.text-div_paragraph{
-	font-size: 1.2rem;
-}
-    .layer_title{
-  font-size: 3.5rem;
-  padding-top: 7rem;
-}
+	
+	.section__div{
+	  position: relative;
+	  float: left;
+	  text-align: center;
+	  height: 20rem;
+	  width: 50%;
+	}
+	
+	.picture-div{
+		display: block;
+	}
 
-.layer_paragraph{
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-}
+	.description{
+		font-size: 1.2rem;
+	}
 
-.section_div{
-  position: relative;
-  float: left;
-  text-align: center;
-  height: 20rem;
-  width: 50%;
-}
-  .sec-img{
-  display: block;
-}
-
-
-
-.arrow--style{
-  margin-top: 2.5rem;
-}
-
+	.section-parallax__paragraph{
+		font-size: 1.2rem;
+	}
+	
 }
 

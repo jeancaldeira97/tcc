@@ -1,4 +1,4 @@
-var parallax= document.querySelectorAll(".parallax");
+var parallax= document.querySelectorAll(".js-parallax");
 
 parallax.forEach(function(element){
 	window.addEventListener("scroll", function() {

@@ -32,7 +32,10 @@
 }
 
 
-
+.menu-abrir,
+.menu-fechar{
+  display: none;
+}
 /*Mobile - Estilos do Header - Menu*/
 @media (max-width: 1023px) {
   
@@ -78,6 +81,7 @@
       font-size: 2.7em;
       text-indent: -999em;
        cursor: pointer;
+       display: block;
   }
   .menu-abrir {
       height: 0;

@@ -11,3 +11,19 @@ document.documentElement.onclick = function(event) {
         document.documentElement.classList.remove('menu-ativo');
     }
 };
+
+
+
+var btn = document.querySelector(".js-arrow");
+var pai = document.querySelector(".js-about");
+
+var offset = pai.getBoundingClientRect();
+
+console.log(offset);
+btn.onclick = function(){
+  window.scroll({
+    top: offset.top,
+    left: offset.x, 
+    behavior: 'smooth' 
+  });
+};
