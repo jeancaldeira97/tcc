@@ -19,43 +19,7 @@
 }
 
 .main-section__button {
-  display: inline-block;
-  border-radius: 0.25rem;
-  background-color: rgb(22,171,156);
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 1.1rem;
-  width: 12rem;
-  transition: all 0.5s;
-  cursor: pointer;
   margin-top:3.5rem;
-}
-
-.main-section__button span {
-  cursor: pointer;
-      position: relative;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-.main-section__button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -1.25rem;
-  transition: 0.5s;
-}
-
-.main-section__button:hover span {
-  padding-right: 1.56rem;
-}
-
-.main-section__button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 
