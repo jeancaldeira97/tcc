@@ -1,3 +1,4 @@
+/*--Efeito menu - Aparece/Desaparece --*/
 document.querySelector('.menu-abrir').onclick = function() {
     document.documentElement.classList.add('menu-ativo');
 };
@@ -13,7 +14,7 @@ document.documentElement.onclick = function(event) {
 };
 
 
-
+/*-- Efeito de scroll - Arrow --*/
 var btn = document.querySelector(".js-arrow");
 var pai = document.querySelector(".js-about");
 
@@ -27,3 +28,21 @@ btn.onclick = function(){
     behavior: 'smooth' 
   });
 };
+
+/*-- Efeito Parallax - Imagens --*/
+var parallax= document.querySelectorAll(".js-parallax");
+
+parallax.forEach(function(element){
+	window.addEventListener("scroll", function() {
+    var scrolledHeight= window.pageYOffset,
+    limit=element.offsetTop+element.offsetHeight;
+    if(scrolledHeight >element.offsetTop && scrolledHeight <= limit) {
+       element.style.backgroundPositionY= (scrolledHeight -element.offsetTop) /1.5+ "px";
+    } 
+    else {
+       element.style.backgroundPositionY= "0";
+    }
+	});
+});
+
+
