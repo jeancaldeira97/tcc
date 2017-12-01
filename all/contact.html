@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width">
+			
+			<title>Home</title>
+			
+			<link rel="stylesheet" type="text/css" href="css/reset.css">
+			<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+			<link rel="stylesheet" type="text/css" href="css/index.css">
+			<link rel="stylesheet" type="text/css" href="css/button.css">
+			<link rel="stylesheet" type="text/css" href="css/input.css">
+			<link rel="stylesheet" type="text/css" href="css/header.css">
+			<link rel="stylesheet" type="text/css" href="css/sections.css">
+			<link rel="stylesheet" type="text/css" href="css/contate.css">
+			<link rel="stylesheet" type="text/css" href="css/footer.css">
+	</head>
+
+	<body>
+	
+		<header class="header">
+
+			<button class="menu-abrir">Abre Menu</button>
+			<a href="home.html"><h1 class="header__logotext logotext--style">Planned</h1></a>
+			
+			<nav class="header__nav nav-menu">
+					
+					<button class="menu-fechar">Fecha Menu</button>
+					<ul class="nav-menu__list list">
+						<a href="login.html"><li class="list__child">Entrar</li></a>
+						<a href="contact.html"><li class="list__child">Contate-nos</li></a>
+						<a href="home.html#about"><li class="list__child">Sobre</li></a>
+					</ul>
+
+			</nav>
+
+		</header>
+
+
+
+		<main>
+			
+
+			<section class="section section--white great--section">
+				
+				<div class="section__div content-div small--div js-content">
+					<h2 class="content-div__title">ENTRE EM CONTATO CONOSCO</h2>
+					<p class="content-div__paragraph description">Digite suas informações e entre em contato conosco.
+					 </p>
+					 <span>
+						<input class="input" type="text" name="User" required>
+						<span class="floating-label">Nome:</span>
+					</span>
+					 <span>
+						<input class="input" type="email" name="email" required>
+						<span class="floating-label">Email:</span>
+					</span>
+					<span>
+						<textarea class="textarea" placeholder="Digite sua mensagem aqui" cols="50" rows="8" name="textarea" required></textarea>
+						<button class="content-div__button button js-enviado"><span>Enviar</span></button>
+					</span>
+				</div>
+
+				<div class="section__div content-div message js-message">
+					<h2 class="content-div__title message--title">Mensagem enviada com sucesso!</h2>
+					<p class="content-div__paragraph description">Obrigado por entrar em contato conosco.
+				</div>
+
+				<div class="section__div picture-div small--div"><img class="picture-div__image great--image" src="images/office.jpg"></div>
+				
+			
+			</section>
+
+		</main>
+		
+		<footer class="footer">
+			
+			<div class="footer__first-div first-div"></div>
+
+			<div class="footer__last-div last-div">
+				<h4 class="last-div__copy">&copy; Jean Caldeira</h4>
+				<a href="home.html"><h1 class="last-div__logotext logotext--style">Planned</h1></a>
+			</div>
+
+		</footer>
+
+	<script src="js/effects.js"></script>
+	<script src="js/message.js"></script>
+	</body>
+</html>

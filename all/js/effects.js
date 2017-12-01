@@ -15,19 +15,20 @@ document.documentElement.onclick = function(event) {
 
 
 /*-- Efeito de scroll - Arrow --*/
-var btn = document.querySelector(".js-arrow");
+var btn = document.querySelector(".js-scroll");
 var pai = document.querySelector(".js-about");
 
 var offset = pai.getBoundingClientRect();
 
-console.log(offset);
-btn.onclick = function(){
+btn.onclick = scrollToAbout; 
+
+function scrollToAbout(){
   window.scroll({
     top: offset.top,
     left: offset.x, 
     behavior: 'smooth' 
   });
-};
+}
 
 /*-- Efeito Parallax - Imagens --*/
 var parallax= document.querySelectorAll(".js-parallax");

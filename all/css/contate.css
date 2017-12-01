@@ -1,0 +1,65 @@
+/* Contate estruturas e modificadores */
+.great--section{
+  height: 35rem;
+}
+.small--div{
+  width: 100%; 
+}
+.input{
+	margin: 1rem auto 1rem auto;
+	display: block;
+}
+
+.content-div__title{
+    margin-top:5%;
+  }
+.content-div__button{
+	display: block;
+  margin: 1rem auto 0 auto;
+}
+
+.message{
+	display: none;
+}
+
+.description{
+  margin-bottom: 3rem;
+}
+
+.content-div__title{
+    font-size: 1.3rem;
+
+  }
+/* Classes utilizadas pelo Javascript */
+.disappear{
+	display: none;
+}
+
+.appear{
+	display: block;
+}
+
+/* Input */
+input[type=text],input[type=password],input[type=tel],input[type=email]{
+ width: 60%;
+ color: black;
+}
+
+/*Adaptações mobile*/
+@media screen and (min-width: 1023px) { 
+  .small--div{
+    width: 40%; 
+    margin-left: 10%;
+  }
+
+  .content-div__title{
+    font-size: 1.7rem;
+    margin-top:10%;
+  }
+
+  
+}
+
+.message--title{
+  margin-top: 30%;
+ }

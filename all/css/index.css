@@ -22,7 +22,7 @@ button:focus {
     outline: none;
 }
 
-.logotext{
+.logotext--style{
 	color:rgb(22,171,156);
 	font-family: 'aileronsregular';
 }

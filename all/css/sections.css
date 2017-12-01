@@ -7,8 +7,8 @@
 .section__div{
 	float: left;
 	text-align: center;
-	height: 20rem;
 	width: 100%;
+	height: 100%;
 }
 
 .picture-div{
@@ -53,8 +53,7 @@
 	margin: 2rem 2rem 0 2rem;
 }
 
-
-/*-- Modificadores de sessões--*/
+/*-- Modificadores--*/
 .section--green{
 	background-color: rgb(22,171,156);
 }
@@ -71,7 +70,11 @@
     background-size: cover;
 }
 
-
+.great--image{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
 /*--Alterações Mobile--*/
 @media screen and (min-width: 1023px) { 
 	
@@ -79,7 +82,7 @@
 	  position: relative;
 	  float: left;
 	  text-align: center;
-	  height: 20rem;
+	  height: 100%;
 	  width: 50%;
 	}
 	
