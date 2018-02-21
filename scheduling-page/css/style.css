@@ -7,31 +7,39 @@
 }
 
 #conteudo {
-	width: 80%;
-	height: 100%;
-	float: right;
+	width: 100%;
+	float: none;
 	text-align: center;
 }
 
-#menu {
+.page-header{
 	width: 100%;
-	height: 10%;
+	height: 5%;
 	margin: 0; 
 	padding: 0;
-	float: left;
 	background: black;
 	opacity: .85;
 	display: block;
 }
 
-#menu ul li {
+.menu {
+	width: 100%;
+	margin: 0; 
+	padding: 0;
+	float: left;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background: #272727; 
+}
+
+.menu ul li {
 	margin: 0; 
 	padding: 0;
 	text-align: center;
-	list-style-type: none;
 }
 
-#menu a:link {
+.menu a:link {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
@@ -40,20 +48,19 @@
 	font-size: 1rem;
 }
 
-#menu a:hover {
+.menu a:hover {
 	background: white;
 	color: black;
 }
 
 #agenda {
-width: 60%;
 border-collapse: collapse;
 font-size: 0.75rem;
 font-family: Geneva, Verdana, sans-serif;
 position: relative;
 float: left;
 margin-left: 3rem;
-margin-top: 2rem;
+margin-top: 7rem;
 border-radius: 2rem;
 }
 
@@ -97,12 +104,11 @@ color:#FFF;
 
 
 #cadastrar-horario{
-	position: relative;
-	float:right;
-	width: 30%;
+	width: 100%;
 	height: 35%;
-	margin-top: 7rem;
-	margin-right: 1rem;
+	float: right;
+	position: relative;
+	margin: 7rem auto 0 auto;
 }
 
 .titles{
@@ -131,12 +137,83 @@ color:#FFF;
 	display: block;
 }
 
+
+  .open-menu{
+      background: none;
+      border: 0;
+      outline: 0;
+      -webkit-appearance: none;
+      font-size: 2.7em;
+      text-indent: -999em;
+       cursor: pointer;
+       display: block;
+  }
+.open-menu {
+      height: 0;
+      width:.75em;
+      padding-top:.125em;
+      border-top: .375em double #FFF;
+      border-bottom: .125em solid #FFF;
+      margin: 0.6rem 1rem;
+      float: right;
+  }
+
+.close-menu{
+      background: none;
+      border: 0;
+      outline: 0;
+      -webkit-appearance: none;
+      font-size: 3.5em;
+      text-indent: -999em;
+       cursor: pointer;
+       display: none;
+  }
+
+  .close-menu{
+      color: white;
+      position: relative;
+      height: 1em;
+      width: 1em;
+      float: right;
+  }
+
+    .close-menu:before {
+      content: '\00D7';
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-indent: 0;
+  }
+
+thead, tbody { display: block; }
+
+tbody {
+    height: 20rem;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
 .show{
 	display: block;
 }
 
+.hidden{
+	display: none;
+}
 @media screen and (min-width: 1023px) { 
-	#menu {
+
+	#cadastrar-horario{
+	position: relative;
+	float:right;
+	width: 30%;
+	height: 35%;
+	margin-top: 7rem;
+	margin-right: 1rem;
+}
+	.page-header{
+	  display: none;
+	}
+	.menu {
 	width: 20%;
 	height: 100%;
 	margin: 0; 
@@ -147,4 +224,45 @@ color:#FFF;
 	display: block;
 }
 
+.menu ul li {
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	float: none;
+	list-style-type: none;
+}
+
+.menu a:link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1.5rem;
+	display: block;
+	font-size: 1rem;
+}
+
+.menu a:hover {
+	background: white;
+	color: black;
+}
+#conteudo {
+	width: 80%;
+	float: right;
+}
+
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px black; 
 }

@@ -7,9 +7,12 @@
 	</head>
 
 	<body>
-	
-		<nav id="menu">
-
+		
+		<header class="page-header">	
+				<button class="open-menu">Abre Menu</button>
+				<button class="close-menu">Fecha menu</button>
+		</header>
+		<nav class="menu">
 		  <ul>
 			<li><a href="link1.htm">Perfil<a/></li>
 			<li><a href="link2.htm">Agendamento</a></li>
@@ -19,9 +22,9 @@
 		  </ul>
 		</nav>
 
-		<div id="conteudo">		
+		<div id="conteudo">	
 			<table id="agenda">
-
+				<thead>
 					<tr>
 						<th>Horários</th>
 						<th>Domingo</th>
@@ -32,6 +35,9 @@
 						<th>Sexta</th>
 						<th>Sábado</th>
 					</tr>
+				</thead>
+				<tbody>
+
 					<tr>
 						<th class="atendimento">10:00</th>
 						<td class="horario" title=""></td>
@@ -43,8 +49,7 @@
 						<td class="horario" title=""></td>
 					</tr>
 					
-				<tbody>
-								<tr>
+					<tr>
 						<th class="atendimento">10:30</th>
 						<td class="horario" title=""></td>
 						<td class="horario" title=""></td>
@@ -277,6 +282,7 @@
 				</tbody>
 			
 			</table>
+
 			<div id="cadastrar-horario">
 				<p class="titles">Nome do cliente: 
 					<input class="client" type="text" placeholder="Nome do cliente"></br>

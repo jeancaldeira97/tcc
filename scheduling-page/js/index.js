@@ -172,3 +172,23 @@ function manipulateSelectEnd(divTime, element){
 		}
 	}
 }
+
+
+
+/*Menu*/
+
+var menuOpen = document.querySelector(".open-menu");
+var closeMenu = document.querySelector(".close-menu");
+var insideMenu = document.querySelector(".menu");
+menuOpen.addEventListener("click",function(){
+   menuOpen.classList.add("hidden");
+   closeMenu.classList.add("show");
+   insideMenu.classList.add("show");
+});
+
+closeMenu.addEventListener("click",function(){
+   menuOpen.classList.remove("hidden");
+   closeMenu.classList.remove("show");
+   insideMenu.classList.remove("show");	
+
+});
