@@ -192,3 +192,20 @@ closeMenu.addEventListener("click",function(){
    insideMenu.classList.remove("show");	
 
 });
+
+
+
+/*Table*/
+var selectTable = document.querySelector("#select_table");
+var allTable = document.querySelectorAll(".hidable");
+selectTable.addEventListener("change", function() {
+	allTable.forEach(function(element){
+		if(!element.classList.contains("mobile-disappear")){
+			element.classList.add("mobile-disappear");
+		}
+		if(element.classList.contains(selectTable.options[selectTable.selectedIndex].value)) {
+				element.classList.remove("mobile-disappear");
+		}
+		
+	});
+}); 
