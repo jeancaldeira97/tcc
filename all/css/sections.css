@@ -65,7 +65,7 @@
 
 .section--transparent{
 	color: white;
-	background: url("../images/back2.jpg");
+	background: url("../images/hair_terminology_01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -75,9 +75,12 @@
 	height: 100%;
 	padding: 0;
 }
+
 /*--Alterações Mobile--*/
 @media screen and (min-width: 1023px) { 
-	
+	.section--transparent{
+	 background-attachment: fixed;
+ }
 	.section__div{
 	  position: relative;
 	  float: left;
